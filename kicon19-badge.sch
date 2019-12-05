@@ -15,20 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Conn_ARM_JTAG_SWD_20 J6
-U 1 1 5C05E87D
-P 9450 2300
-F 0 "J6" H 8920 2346 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_20" H 8920 2255 50  0000 R CNN
-F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical" H 9900 1250 50  0001 L TNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 9100 1050 50  0001 C CNN
-F 4 "Digi-Key" H 3150 -300 50  0001 C CNN "Distrib1"
-F 5 "ED10524-ND" H 3150 -300 50  0001 C CNN "Distrib1Part"
-F 6 "0.33281" H 3150 -300 50  0001 C CNN "Distrib1Price"
-	1    9450 2300
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:C C6
 U 1 1 5CCDE916
 P 2550 6800
@@ -1295,36 +1281,20 @@ Connection ~ 5650 6600
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5C0B19FA
-P 9550 1000
+P 9400 800
 AR Path="/5CCA506B/5C0B19FA" Ref="#PWR?"  Part="1" 
 AR Path="/5C0B19FA" Ref="#PWR033"  Part="1" 
-F 0 "#PWR033" H 9550 850 50  0001 C CNN
-F 1 "+3V3" H 9565 1173 50  0000 C CNN
-F 2 "" H 9550 1000 50  0001 C CNN
-F 3 "" H 9550 1000 50  0001 C CNN
-	1    9550 1000
-	1    0    0    -1  
-$EndComp
-NoConn ~ 9450 1500
-NoConn ~ 8850 2700
-NoConn ~ 8850 2800
-$Comp
-L power:GND #PWR034
-U 1 1 5C0EA73C
-P 9550 3150
-F 0 "#PWR034" H 9550 2900 50  0001 C CNN
-F 1 "GND" H 9550 3000 50  0000 C CNN
-F 2 "" H 9550 3150 50  0001 C CNN
-F 3 "" H 9550 3150 50  0001 C CNN
-	1    9550 3150
+F 0 "#PWR033" H 9400 650 50  0001 C CNN
+F 1 "+3V3" H 9415 973 50  0000 C CNN
+F 2 "" H 9400 800 50  0001 C CNN
+F 3 "" H 9400 800 50  0001 C CNN
+	1    9400 800 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6450 2400 6950 2400
 Wire Wire Line
-	6950 2400 6950 2200
-Wire Wire Line
-	6950 2200 8850 2200
+	6950 2400 6950 1800
 Wire Wire Line
 	6450 2700 6950 2700
 Wire Wire Line
@@ -1337,29 +1307,9 @@ Wire Wire Line
 	7050 2800 7050 3850
 Wire Wire Line
 	7050 3850 8850 3850
-Wire Wire Line
-	8850 1800 8150 1800
-Wire Wire Line
-	8150 1800 8150 3600
 NoConn ~ 6450 3700
 Wire Wire Line
-	9550 3150 9550 3100
-NoConn ~ 8850 1900
-NoConn ~ 8850 2100
-Wire Wire Line
-	6450 2300 8850 2300
-Wire Wire Line
-	6450 2100 8350 2100
-Wire Wire Line
-	8350 2100 8350 2500
-Wire Wire Line
-	8350 2500 8850 2500
-Wire Wire Line
 	6450 2200 6750 2200
-Wire Wire Line
-	8450 2000 8450 2400
-Wire Wire Line
-	8450 2400 8850 2400
 Wire Wire Line
 	3800 4400 4450 4400
 Wire Wire Line
@@ -1856,7 +1806,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 4000 3800 3500
 Wire Wire Line
-	6750 2000 8450 2000
+	6750 2000 8900 2000
 Wire Wire Line
 	6750 2200 6750 2000
 Text Label 4450 2700 2    50   ~ 0
@@ -1883,7 +1833,7 @@ U 1 1 5C496839
 P 1700 2100
 F 0 "J2" H 1750 2617 50  0000 C CNN
 F 1 "Ports" H 1750 2526 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 1700 2100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Horizontal" H 1700 2100 50  0001 C CNN
 F 3 "~" H 1700 2100 50  0001 C CNN
 F 4 "Digi-Key" H 100 0   50  0001 C CNN "Distrib1"
 F 5 "S2012EC-07-ND" H 100 0   50  0001 C CNN "Distrib1Part"
@@ -1977,25 +1927,25 @@ $EndComp
 $Comp
 L Device:R R7
 U 1 1 5C2F2686
-P 9550 1250
-F 0 "R7" H 9620 1296 50  0000 L CNN
-F 1 "DNF_22" H 9620 1205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9480 1250 50  0001 C CNN
-F 3 "~" H 9550 1250 50  0001 C CNN
-F 4 "Digi-Key" H 3200 -2700 50  0001 C CNN "Distrib1"
-F 5 "CR0603-JW-220ELFCT-ND" H 3200 -2700 50  0001 C CNN "Distrib1Part"
-F 6 "0.0064" H 3200 -2700 50  0001 C CNN "Distrib1Price"
-F 7 "Mouser" H 3200 -2700 50  0001 C CNN "Distrib2"
-F 8 "652-CR0603-JW-220ELF	" H 3200 -2700 50  0001 C CNN "Distrib2Part"
-F 9 "0.006" H 3200 -2700 50  0001 C CNN "Distrib2Price"
-F 10 "No" H 9550 1250 50  0001 C CNN "Mounted"
-	1    9550 1250
+P 9400 1050
+F 0 "R7" H 9470 1096 50  0000 L CNN
+F 1 "DNF_22" H 9470 1005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9330 1050 50  0001 C CNN
+F 3 "~" H 9400 1050 50  0001 C CNN
+F 4 "Digi-Key" H 3050 -2900 50  0001 C CNN "Distrib1"
+F 5 "CR0603-JW-220ELFCT-ND" H 3050 -2900 50  0001 C CNN "Distrib1Part"
+F 6 "0.0064" H 3050 -2900 50  0001 C CNN "Distrib1Price"
+F 7 "Mouser" H 3050 -2900 50  0001 C CNN "Distrib2"
+F 8 "652-CR0603-JW-220ELF	" H 3050 -2900 50  0001 C CNN "Distrib2Part"
+F 9 "0.006" H 3050 -2900 50  0001 C CNN "Distrib2Price"
+F 10 "No" H 9400 1050 50  0001 C CNN "Mounted"
+	1    9400 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9550 1400 9550 1500
+	9400 1200 9400 1300
 Wire Wire Line
-	9550 1000 9550 1100
+	9400 800  9400 900 
 NoConn ~ 6450 3500
 Connection ~ 8150 4200
 Wire Wire Line
@@ -2284,7 +2234,7 @@ Wire Wire Line
 	1000 4900 900  4900
 Wire Wire Line
 	1000 5000 900  5000
-Text Notes 9500 1350 1    50   ~ 10
+Text Notes 9350 1150 1    50   ~ 10
 DNF
 Wire Wire Line
 	600  1800 1400 1800
@@ -2358,10 +2308,51 @@ F 6 "0.01150" H 1000 -900 50  0001 C CNN "Distrib1Price"
 	1    2700 1750
 	-1   0    0    1   
 $EndComp
+Text Notes 7000 7100 0    50   ~ 0
+Copyright Maciej Suminski 2019\nThis documentation describes Open Hardware and is licensed under the CERN OHL v. 1.2.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY,\nSATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.\nPlease see the CERN OHL v.1.2 for applicable conditions.
+$Comp
+L power:GND #PWR034
+U 1 1 5C0EA73C
+P 9400 2600
+F 0 "#PWR034" H 9400 2350 50  0001 C CNN
+F 1 "GND" H 9400 2450 50  0000 C CNN
+F 2 "" H 9400 2600 50  0001 C CNN
+F 3 "" H 9400 2600 50  0001 C CNN
+	1    9400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1800 8900 1800
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J6
+U 1 1 5CC9E578
+P 9400 1900
+F 0 "J6" H 8956 1946 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 8956 1855 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Horizontal" H 9400 1900 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 9050 650 50  0001 C CNN
+	1    9400 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 1600 8150 1600
+Wire Wire Line
+	8150 1600 8150 3600
+Wire Wire Line
+	6450 2100 8900 2100
+Wire Wire Line
+	6450 2300 6850 2300
+Wire Wire Line
+	6850 2300 6850 1900
+Wire Wire Line
+	6850 1900 8900 1900
+Wire Wire Line
+	9400 2600 9400 2500
+Wire Wire Line
+	9400 2500 9500 2500
 Wire Bus Line
 	1500 4000 1500 4700
 Wire Bus Line
 	2200 4000 2200 4700
-Text Notes 7000 7100 0    50   ~ 0
-Copyright Maciej Suminski 2019\nThis documentation describes Open Hardware and is licensed under the CERN OHL v. 1.2.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY,\nSATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.\nPlease see the CERN OHL v.1.2 for applicable conditions.
+Connection ~ 9400 2500
 $EndSCHEMATC
